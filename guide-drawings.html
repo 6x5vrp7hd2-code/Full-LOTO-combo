@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Drawing-linked isolation status · Powertec Isolation &amp; Safety Document Control</title>
+<meta name="theme-color" content="#0D0F12">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="styles.css?v=15">
+<script src="guide.js?v=15" defer></script>
+</head>
+<body data-page="guide-drawings" data-root="">
+<template id="gc"><div data-k="eb">12 / DRAWINGS &amp; POIs</div><div data-k="h1">Drawing-linked isolation status</div><div data-k="lead">Each relevant point on an approved single-line diagram is intended to link to its lock number, current allocation and active document.</div><div data-k="body"><div class="grid two"><article class="panel"><h3>What the AP sees</h3><p>The SLD shows a small circle containing the dedicated lock number next to each relevant switch, circuit breaker or earth switch. The AP selects that point to review its recorded status.</p></article><article class="panel"><h3>What happens if allocated</h3><p>If the isolation point is associated with an active safety document, the point is visually struck through or otherwise marked as allocated. Selecting it opens the associated document details, including the recipient CP and contact information.</p></article></div><div class="grid two"><article class="panel"><h3>Connected equipment</h3><p>Programme checks use a map of how equipment connects. That map must match the approved drawings, or a conflict could be missed.</p></article><article class="panel"><h3>Viewing one item</h3><p>Equipment availability brings together an item’s requests, documents, keys, activities and deadlines. It complements the drawing and does not replace it.</p></article></div><div class="schematic"><p class="eyebrow">ILLUSTRATIVE ONLY — NOT A REAL SLD</p><div class="sld-row"><div class="asset"><span class="asset-no">101</span><strong>HV SWITCH</strong><small>Available in example</small></div><div class="line"></div><div class="asset occupied"><span class="asset-no">102</span><strong>EARTH SWITCH</strong><small>Allocated to PTW-024</small></div><div class="line"></div><div class="asset"><span class="asset-no">103</span><strong>LV CB</strong><small>Available in example</small></div></div><button class="btn primary small" id="showExample" type="button">Select allocated point 102 →</button><div id="exampleRecord" hidden class="record"><strong>Illustrative linked document</strong><p>Point 102 · PTW-024 · CP: Example recipient · Status: Allocated (sample only)</p><p>This is a demonstration of the proposed click-through behaviour, not a live asset record.</p></div></div><div class="warning"><strong>Client approval required:</strong> Site-specific SLDs are confidential engineering information. Only use approved drawings with explicit asset-owner/client permission, controlled revisions, verified mappings and suitable security controls. A drawing indicator cannot establish the physical condition or safety of equipment.</div><a class="btn primary small guide-next" href="guide-assurance.html">Next: Security and deployment controls →</a></div></template>
+<noscript>Powertec Isolation &amp; Safety Document Control needs JavaScript switched on.</noscript>
+<script src="app.js?v=15"></script>
+</body>
+</html>
